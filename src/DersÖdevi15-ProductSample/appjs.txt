@@ -1,0 +1,21 @@
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "./DersÖdevi15-ProductSample/Home"
+import Products from "./DersÖdevi15-ProductSample/Products";
+import ProductsDetail from "./DersÖdevi15-ProductSample/ProductDetail";
+
+function App() {
+
+  return <>
+    <ul style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+      <li><Link to='/'>Home</Link></li>
+      <li><Link to='/products'>Products</Link></li>
+    </ul>
+    <Routes>
+      <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/products" element={<Products></Products>}></Route>
+      <Route path="/products/:id" element={<ProductsDetail></ProductsDetail>}></Route>
+    </Routes>
+  </>
+}
+
+export default App;
