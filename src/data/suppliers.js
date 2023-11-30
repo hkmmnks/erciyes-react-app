@@ -404,14 +404,5 @@ export let suppliersData = [
             "country": "Canada",
             "phone": "(514) 555-2955"
         }
-    },
-    {
-        "id": 30,
-        "address": {
-            "phone": "a"
-        },
-        "companyName": "aaaaaaa",
-        "contactName": "a"
     }
 ]
-

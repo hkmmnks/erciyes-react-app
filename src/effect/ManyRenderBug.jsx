@@ -9,16 +9,16 @@ function ManyRenderBug() {
     const [categories, setcategories] = useState([])
 
     axios.get('https://northwind.vercel.app/api/categories')
-    .then(res => {
-       // setcategories(res.data)
-    })
+        .then(res => {
+            // setcategories(res.data)
+        })
 
     return (<>
-    <ul>
-        {
-            categories.map(item => <li>{item.name}</li>)
-        }
-    </ul>
+        <ul>
+            {
+                categories.map(item => <li>{item.name}</li>)
+            }
+        </ul>
         {/* <h1>{number}</h1> */}
     </>
     )
